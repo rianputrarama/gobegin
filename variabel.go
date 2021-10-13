@@ -25,7 +25,7 @@ func main() {
 	fmt.Printf("most popular fruits : %s, %s, dan %s\n", orange, apple, mango)
 
 	// variable _ (underscore) atau blank identifier
-	// go memiliki aturan ketat dimana variable harus digunakan, jika tidak digunakan maka akan error
+	// go memiliki aturan gketat dimana variable harus digunakan, jika tidak digunakan maka akan error
 	// untuk mengatasinya error yang dideklarasikan oleh variable gunakan _
 	var music, _ string = "grunge", "rock"
 	fmt.Printf("fav music : %s", music)
