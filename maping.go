@@ -12,6 +12,10 @@ func main() {
 	names["january"]="erlang"
 	names["february"]="golang"
 
+	for key, element := range names {
+		fmt.Println("Key :", key, "=>", "Element :", element)
+	}
+
 	fmt.Printf("%s", names["january"])
 
 }
