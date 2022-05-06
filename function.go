@@ -87,6 +87,11 @@ func detailsProgramming(name, age string, lang ...string) {
 	fmt.Printf("Programming skills : %s\n", programLang)
 }
 
+// fungsi closure
+var getMinMaxClosure = func(n []int) (int, int) {
+	
+}
+
 
 
 
