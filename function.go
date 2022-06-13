@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	var names = []string{"rick","anisa"}
+	var names = []string{"rick", "anisa"}
 	printMsg("Hallo", names)
 	fmt.Printf("Age : %d\n", add(20, 6))
 
@@ -37,7 +37,7 @@ func main() {
 	fmt.Printf("Min : %d\n", min)
 	fmt.Printf("Max : %d\n", max)
 
-	var programmingLang = []string {"java", "php", "node js", "python", "golang"}
+	var programmingLang = []string{"java", "php", "node js", "python", "golang"}
 	detailsProgramming("Rian", "26", programmingLang...)
 }
 
@@ -53,7 +53,7 @@ func add(x, y int) int {
 // multiple return
 func calculate(d float64) (float64, float64) {
 	// hitung luas
-	var area = math.Pi * math.Pow(d / 2, 2)
+	var area = math.Pi * math.Pow(d/2, 2)
 	// hitung keliling
 	var circumference = math.Pi * d
 
@@ -63,7 +63,7 @@ func calculate(d float64) (float64, float64) {
 
 // fungsi predefined
 func calculatePre(d float64) (area float64, circumference float64) {
-	area = math.Pi * math.Pow(d / 2, 2)
+	area = math.Pi * math.Pow(d/2, 2)
 	circumference = math.Pi * d
 
 	return
@@ -89,35 +89,5 @@ func detailsProgramming(name, age string, lang ...string) {
 
 // fungsi closure
 var getMinMaxClosure = func(n []int) (int, int) {
-	
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

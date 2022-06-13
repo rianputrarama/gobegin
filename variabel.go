@@ -9,15 +9,17 @@ func main() {
 	var email string
 	email = "maverick@example.com"
 
+	fmt.Sprintf()
+
 	fmt.Printf("username : %s\nemail : %s\n", username, email)
 
 	// deklarasi variable tanpa menggunakan tipe data dan juga keyword var
 	city := "Jakarta"
-	fmt.Printf("city : %s\n",city)
+	fmt.Printf("city : %s\n", city)
 
 	// deklarasi multi variable
 	var golang, java, php string
-	golang, java, php = "golang","java","php"
+	golang, java, php = "golang", "java", "php"
 	fmt.Printf("skills : %s, %s, dan %s\n", golang, java, php)
 
 	// atau dengan cara singkat
