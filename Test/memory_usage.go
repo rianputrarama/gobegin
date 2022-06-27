@@ -1,4 +1,4 @@
-package main
+package Test
 
 import (
 	"fmt"
@@ -15,14 +15,14 @@ import (
 type TerraformResource struct {
 	Cloud               string // 16 bytes
 	TerraformVersion    string // 16 bytes + 0 byte
-	ModuleVersionMajor  int32  // 4 bytes + 4 byte
 	Name                string // 16 bytes
 	PluginVersion       string // 16 bytes// s
+	ModuleVersionMajor  int32  // 4 bytes + 4 byte
 	HaveDSL             bool   // 1 byte + 6 bytes
 	IsVersionControlled bool   // 1 byte + 0 byte
 }
 
-func main() {
+func CheckMemory() {
 	var d TerraformResource
 	d.Cloud = "aws"
 	d.Name = "ec2"

@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"f_golang/Test"
+	"fmt"
+)
 
 func main() {
 	// go memiliki aturan cukup ketat dalam persoalan variabel yaitu tidak ada variabel yg boleh menganggur
@@ -8,8 +11,6 @@ func main() {
 	var username string = "maverick"
 	var email string
 	email = "maverick@example.com"
-
-	fmt.Sprintf()
 
 	fmt.Printf("username : %s\nemail : %s\n", username, email)
 
@@ -30,5 +31,6 @@ func main() {
 	// go memiliki aturan gketat dimana variable harus digunakan, jika tidak digunakan maka akan error
 	// untuk mengatasinya error yang dideklarasikan oleh variable gunakan _
 	var music, _ string = "grunge", "rock"
-	fmt.Printf("fav music : %s", music)
+	fmt.Printf("fav music : %s\n", music)
+	Test.CheckMemory()
 }

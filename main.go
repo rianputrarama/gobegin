@@ -13,11 +13,16 @@ import (
 **/
 
 func main() {
+	var s []int
+	s = append(s, 0)
+	fmt.Println(s)
 	fmt.Println("Belajar Golang Menyenangkan")
-	result := calculation.Add(5, 7)
-	fmt.Println("hasil didapatkan dari fungsi diluar func main ", result)
+	resultCal := calculation.Add(5, 7)
+	fmt.Println("hasil didapatkan dari fungsi add ", resultCal)
 	age := calculation.YearOfBirth(1991)
 	fmt.Println("Umurku :", age)
+	resultCal1 := calculation.Multiply(5, 7)
+	fmt.Println("hasil didapatkan dari fungsi multiply ", resultCal1)
 
 	/*age := 27
 	if age > 25 {
