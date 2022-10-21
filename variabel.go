@@ -1,7 +1,6 @@
 package main
 
 import (
-	"f_golang/Test"
 	"fmt"
 )
 
@@ -32,5 +31,7 @@ func main() {
 	// untuk mengatasinya error yang dideklarasikan oleh variable gunakan _
 	var music, _ string = "grunge", "rock"
 	fmt.Printf("fav music : %s\n", music)
-	Test.CheckMemory()
+	var check_nilai int32 = 127
+	fmt.Println("Total Nilai : ", check_nilai)
+	//Test.CheckMemory()
 }
