@@ -23,8 +23,9 @@ func main() {
 	fmt.Printf("skills : %s, %s, dan %s\n", golang, java, php)
 
 	// atau dengan cara singkat
-	orange, apple, mango := "jeruk", "apel", "mangga"
+	orange, apple, mango := "orange", "apple", "mango"
 	fmt.Printf("most popular fruits : %s, %s, dan %s\n", orange, apple, mango)
+	fmt.Println("total huruf apple :", len(apple))
 
 	// variable _ (underscore) atau blank identifier
 	// go memiliki aturan gketat dimana variable harus digunakan, jika tidak digunakan maka akan error
