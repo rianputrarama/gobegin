@@ -21,4 +21,8 @@ func main() {
 	}
 
 	fmt.Println(age)
+
+	names[2] = "BMW"
+	fmt.Println(names[2])
+	fmt.Println(names)
 }
