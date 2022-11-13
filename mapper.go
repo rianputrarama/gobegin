@@ -23,4 +23,16 @@ func main() {
 
 	delete(animals, 1)
 	fmt.Println("Map after deleting pair with key 1", animals)
+
+	names := map[int]string{
+		1: "raisa",
+		2: "tiara",
+	}
+
+	fmt.Println(names)
+	fmt.Println(len(names))
+
+	for key, value := range names {
+		fmt.Println("Key : ", key, " => ", value)
+	}
 }

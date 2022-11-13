@@ -12,6 +12,11 @@ import "fmt"
 func main() {
 	var books int = 5
 
+	for books <= 10 {
+		fmt.Println("my book : ", books)
+		books++
+	}
+
 	for i := 1; i <= books; i++ {
 		fmt.Println("buku : ", i)
 	}
