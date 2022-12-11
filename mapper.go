@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 /**
  * Created by GoLand
@@ -35,4 +37,12 @@ func main() {
 	for key, value := range names {
 		fmt.Println("Key : ", key, " => ", value)
 	}
+
+	emptyMap := make(map[string]string)
+	emptyMap["A1"] = "machine 1"
+	emptyMap["A2"] = "machine 2"
+
+	machine := emptyMap["A1"]
+
+	fmt.Println(machine)
 }

@@ -6,7 +6,13 @@ import (
 	"strings"
 )
 
+func sayHello() {
+	fmt.Println("Hello, World!")
+}
+
 func main() {
+	defer logging()
+	sayHello()
 	var names = []string{"rick", "anisa"}
 	printMsg("Hallo", names)
 	fmt.Printf("Age : %d\n", add(20, 6))
@@ -39,6 +45,28 @@ func main() {
 
 	var programmingLang = []string{"java", "php", "node js", "python", "golang"}
 	detailsProgramming("Rian", "26", programmingLang...)
+	perkalian(3, 4)
+
+	var result = []string{"rose", "tiara", "dome"}
+	fmt.Println(nameOfPeople(result))
+
+	name1, name2 := moreValue()
+	fmt.Println(name1, ",", name2)
+
+	a, b, c := getFullNamed()
+	fmt.Println(a)
+	fmt.Println(b)
+	fmt.Println(c)
+
+	passingSlice := []int{10, 20, 30, 50}
+	fmt.Println(calculateVariadic(passingSlice...))
+
+	myname := funcVal
+	fmt.Println(myname("Rian"))
+}
+
+func moreValue() (string, string) {
+	return "Elriza", "Shara"
 }
 
 func printMsg(message string, arr []string) {
@@ -59,6 +87,11 @@ func calculate(d float64) (float64, float64) {
 
 	// kembalikan 2 nilai
 	return area, circumference
+}
+
+func nameOfPeople(names []string) string {
+	result := strings.Join(names, ", ")
+	return result
 }
 
 // fungsi predefined
@@ -87,7 +120,28 @@ func detailsProgramming(name, age string, lang ...string) {
 	fmt.Printf("Programming skills : %s\n", programLang)
 }
 
-// fungsi closure
-var getMinMaxClosure = func(n []int) (int, int) {
-
+func perkalian(nilai1 int, nilai2 int) int {
+	total := 0
+	total = nilai1 * nilai2
+	return total
 }
+
+func getFullNamed() (firstName, middleName, lastName string) {
+	firstName = "Febriansyah"
+	middleName = "Putra"
+	lastName = "Ramadhan"
+	return
+}
+
+func funcVal(name string) string {
+	return "Hello " + name
+}
+
+func logging() {
+	fmt.Println("==============Finish!==============")
+}
+
+// fungsi closure
+//var getMinMaxClosure = func(n []int) (int, int) {
+//
+//}

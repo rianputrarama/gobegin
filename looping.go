@@ -48,7 +48,7 @@ func main() {
 		fmt.Println("Good")
 	}
 
-	os := [...]string{"mac", "windows", "linux"}
+	os := [3]string{"mac", "windows", "linux"}
 
 	for i := 0; i < len(os); i++ {
 		fmt.Println("os ", os[i])
