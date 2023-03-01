@@ -19,6 +19,10 @@ func (customer Customer) sayHi(name string) {
 	fmt.Println("Hi", name, "My name is", customer.Name)
 }
 
+type Circle struct {
+	x, y, z float64
+}
+
 func main() {
 	var customer Customer
 	customer.Name = "Rian"
@@ -36,4 +40,14 @@ func main() {
 	fmt.Printf("Nama : %v\nAddress : %v\nAge : %v \n", customer1.Name, customer1.Address, customer1.Age)
 	customer.sayHi("Elriza")
 
+	circle := new(Circle)
+	fmt.Println(*circle)
+
+	circle1 := Circle{
+		x: 10,
+		y: 23,
+		z: 91,
+	}
+
+	fmt.Printf("x: %V\ny: %V\nz: %V", circle1.x, circle1.y, circle1.z)
 }
