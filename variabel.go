@@ -34,5 +34,5 @@ func main() {
 	fmt.Printf("fav music : %s\n", music)
 	var check_nilai int32 = 127
 	fmt.Println("Total Nilai : ", check_nilai)
-	//Test.CheckMemory()
+	//test_math.CheckMemory()
 }
